@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<h1>&gt; moo it </h1>
+<p style="margin-top:0px; font-size:8px;">because cowsay.xyz was taken.</p>
+<br>
+
+<pre>
+{{ cow }}
+</pre>
+<br>
+<form method="post" target="_self">
+    <p style="" align="center"><input type="text" id="text" name="text" style="width:50%; margin-left:2%;" autofocus/><input style="margin-left:2%" type="submit" class="btn btn-primary" value="moo it" /></p>
+
+</form>
+
+{% endblock %}
