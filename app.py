@@ -3,6 +3,7 @@ from functools import wraps
 import logging
 import cowsay
 from logging.handlers import RotatingFileHandler
+import datetime
 
 
 app = Flask(__name__)
@@ -15,7 +16,7 @@ def home():
         if request.form['text']:
             moo_text = request.form['text']
             cow = cowsay.cowsay(moo_text)
-            app.logger.info('[Moo] ' + request.remote_addr + "\t" + moo_text)
+            app.logger.info('[Moo] '+ unicode(now.replace(microsecond=0)) + "\t" + request.remote_addr + "\t" + moo_text)
     return render_template("index.html", cow=cow)
 
 # API
