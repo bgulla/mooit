@@ -16,7 +16,7 @@ def home():
         if request.form['text']:
             moo_text = request.form['text']
             cow = cowsay.cowsay(moo_text)
-            app.logger.info('[Moo] '+ unicode(now.replace(microsecond=0)) + "\t" + request.remote_addr + "\t" + moo_text)
+#            app.logger.info('[Moo] '+ unicode(now.replace(microsecond=0)) + "\t" + request.remote_addr + "\t" + moo_text)
     return render_template("index.html", cow=cow)
 
 # API
@@ -33,7 +33,7 @@ def api():
 # Custom 404 page
 @app.errorhandler(404)
 def page_not_found(e):
-    app.logger.error('[ERROR] ' + request.remote_addr + "\t404\t" + request.url)
+#    app.logger.error('[ERROR] ' + request.remote_addr + "\t404\t" + request.url)
     return render_template('404.html'), 404
 
 # Start the server with the 'run()' method
