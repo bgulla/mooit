@@ -1,2 +1,4 @@
 flask
-emoji
+cowsay
+gunicorn
+#emoji
