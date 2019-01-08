@@ -15,4 +15,7 @@ if __name__ == "__main__":
         cert_file = './python-tls.crt'
         key_file = './python-tls.key'
     application.run(host="0.0.0.0",port=8443,ssl_context=(cert_file,key_file))
+    application.run(host="0.0.0.0",port=8080)
+
+
 
