@@ -4,5 +4,5 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
-EXPOSE 8443
+EXPOSE 8080
 CMD ["wsgi.py"]
