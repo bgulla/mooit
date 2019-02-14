@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: mooit
+  name: mooit-yaml
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mooit
+    spec:
+      containers:
+      - image: bgulla/mooit
+        name: mooit
+#        ports:
+#        - containerPort: 80

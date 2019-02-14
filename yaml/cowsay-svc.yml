@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: mooit
+  name: mooit-svc
+spec:
+  ports:
+  - name: "80"
+    port: 80         # the port the service will expose at the edge
+    targetPort: 8080    # container portt tthat tthe service will forward to
+  selector:
+    app: mooit
+status:
+  loadBalancer: {}
