@@ -18,8 +18,8 @@ new k8s clusters but runs fine using a local python interpreter as well.
 
 
 
-## Deploying to `Kubernetes`
-### Installing with `Helm`
+## Deploying to Kubernetes
+### Installing with Helm
 Included in this repo is a baseline `helm` chart. You must have [helm](https://helm.sh/docs/using_helm/) installed.
 ```bash
 git clone https://github.com/bgulla/mooit .
