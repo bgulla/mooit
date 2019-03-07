@@ -83,7 +83,7 @@ docker run --rm -t \
     bgulla/mooit
 ```
 
-## Running locally with `Python`
+## Running locally with Python
 ```bash
 virtualenv venv
 venv/pip install -r src/requirements.txt
