@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: mooit-svc
+spec:
+  rules:
+  - host: {{ .Values.ingress.hostname }} #Hostname resolution. Make sure DNS is configured.
+    http:
+      paths:
+      - backend:
+          serviceName: mooit-svc
+          servicePort: 80
+        path: /
