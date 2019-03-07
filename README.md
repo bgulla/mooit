@@ -13,8 +13,9 @@
                  </pre>
 
 
-Mooit - everyone loves `cowsay` so I decided to throw it in a Flask Docker container. This repo is used as a playground and boilerplate 
-for testing in kubernetes/docker environments but can be utilized in a good ole Python type of way as well. 
+Mooit - everyone loves `cowsay` so I decided to throw it in a Flask Docker container. This repo is used as a canary test when setting up 
+new k8s clusters but runs fine using a local python interpreter as well.
+
 
 
 ## Deploying to `Kubernetes`
