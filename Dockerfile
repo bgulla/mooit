@@ -1,5 +1,5 @@
 #FROM python:2-alpine
-FROM python:27 #:2-alpine
+FROM python:2-buster
 MAINTAINER Brandon Gulla "hey@bgulla.dev"
 
 COPY ./src /app
