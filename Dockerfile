@@ -1,4 +1,5 @@
-FROM python:2-alpine
+#FROM python:2-alpine
+FROM python:2#:2-alpine
 MAINTAINER Brandon Gulla "hey@bgulla.dev"
 
 COPY ./src /app
