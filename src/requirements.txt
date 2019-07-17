@@ -1,5 +1,2 @@
 flask
-#cowsay
-gunicorn
-#emoji
 PyOpenSSL
